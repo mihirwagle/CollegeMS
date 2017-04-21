@@ -263,14 +263,16 @@ public static final String URL = "jdbc:oracle:thin:@localhost:1521:XE";
             conn=DriverManager.getConnection(URL,USER,PASSWORD);
             statement=conn.createStatement();
             rs =statement.executeQuery("select * from student where studentid="+eid);
-            jTextField3.setText(rs.getString(2));
-            jTextField4.setText(rs.getString(3));
-            jTextField5.setText(rs.getString(4));
-            jTextField6.setText(rs.getString(5));
-            jTextField7.setText(rs.getString(6));
-            jTextField8.setText(rs.getString(7));
-            jTextField9.setText(rs.getString(8));
-            jTextField10.setText(rs.getString(9));
+            while(rs.next()){
+                jTextField3.setText(rs.getString(2));
+                jTextField4.setText(rs.getString(3));
+                jTextField5.setText(rs.getString(4));
+                jTextField6.setText(rs.getString(5));
+                jTextField7.setText(rs.getString(6));
+                jTextField8.setText(rs.getString(7));
+                jTextField9.setText(rs.getString(8));
+                jTextField10.setText(rs.getString(9));
+            }
            //JOptionPane.showMessageDialog(new JFrame(),"updated data", "Dialog",JOptionPane.ERROR_MESSAGE);
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(updatecollege.class.getName()).log(Level.SEVERE, null, ex);

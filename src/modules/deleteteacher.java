@@ -277,15 +277,17 @@ public static final String URL = "jdbc:oracle:thin:@localhost:1521:XE";
             conn=DriverManager.getConnection(URL,USER,PASSWORD);
             statement=conn.createStatement();
             rs =statement.executeQuery("select * from teacher where teacherid="+eid);
-            jLabel13.setText(rs.getString(2));
-            jLabel14.setText(rs.getString(3));
-            jLabel15.setText(rs.getString(4));
-            jLabel16.setText(rs.getString(5));
-            jLabel17.setText(rs.getString(6));
-            jLabel18.setText(rs.getString(7));
-            jLabel19.setText(rs.getString(8));
-            jLabel20.setText(rs.getString(9));
-            jLabel21.setText(rs.getString(10));
+            while(rs.next()){
+                jLabel13.setText(rs.getString(2));
+                jLabel14.setText(rs.getString(3));
+                jLabel15.setText(rs.getString(4));
+                jLabel16.setText(rs.getString(5));
+                jLabel17.setText(rs.getString(6));
+                jLabel18.setText(rs.getString(7));
+                jLabel19.setText(rs.getString(8));
+                jLabel20.setText(rs.getString(9));
+                jLabel21.setText(rs.getString(10));
+            }
            //JOptionPane.showMessageDialog(new JFrame(),"Deleted data", "Dialog",JOptionPane.ERROR_MESSAGE);
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(deletecollege.class.getName()).log(Level.SEVERE, null, ex);
