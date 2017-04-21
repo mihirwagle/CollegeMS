@@ -32,10 +32,7 @@ public class q1 extends javax.swing.JFrame {
         Class.forName("oracle.jdbc.driver.OracleDriver");
            
             conn=DriverManager.getConnection(URL,USER,PASSWORD);
-            statement=conn.prepareStatement("SELECT * FROM TEACHER\n" +
-"WHERE EXPERIENCE > 7\n" +
-"AND DEPTID IN (  SELECT DEPTID FROM DEPARTMENT\n" +
-"		WHERE STUDENTCOUNT >3)");
+            statement=conn.prepareStatement("SELECT * FROM TEACHER WHERE EXPERIENCE > 7 AND DEPTID IN (  SELECT DEPTID FROM DEPARTMENT WHERE STUDENTCOUNT >3)");
             rs=statement.executeQuery();
             while(rs.next())
             {
