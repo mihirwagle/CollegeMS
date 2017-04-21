@@ -272,7 +272,7 @@ public class addteacher extends javax.swing.JFrame {
             conn=DriverManager.getConnection(URL,USER,PASSWORD);
             statement=conn.createStatement();
             statement.executeUpdate("insert into teacher values("+eid+",'"+ename+"',"+sal
-             +",'"+DOB+"','"+DOJ+"',"+exp+",'"+qual+"','"+type+"','"+email+"',"+did+")");
+             +","+DOB+","+DOJ+","+exp+",'"+qual+"','"+type+"','"+email+"',"+did+")");
             JOptionPane.showMessageDialog(new JFrame(),"Inserted data", "Dialog",JOptionPane.ERROR_MESSAGE);
             conn.commit();
         } catch (ClassNotFoundException | SQLException ex) {

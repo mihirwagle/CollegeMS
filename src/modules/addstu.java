@@ -265,7 +265,7 @@ public class addstu extends javax.swing.JFrame {
             conn=DriverManager.getConnection(URL,USER,PASSWORD);
             statement=conn.createStatement();
             statement.executeUpdate("insert into student values("+eid+",'"+name+"',"+did
-             +",'"+email+"','"+address+"',"+gpa+","+att+",'"+placement+"','"+dob+"')");
+             +",'"+email+"','"+address+"',"+gpa+","+att+",'"+placement+"',"+dob+")");
             JOptionPane.showMessageDialog(new JFrame(),"Inserted data", "Dialog",JOptionPane.ERROR_MESSAGE);
             conn.commit();
         } catch (ClassNotFoundException | SQLException ex) {
