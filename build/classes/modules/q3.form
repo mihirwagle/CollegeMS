@@ -176,7 +176,7 @@
     </Container>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Query DESC"/>
+        <Property name="text" type="java.lang.String" value="Select teachers from CMPN department of VESIT"/>
       </Properties>
     </Component>
   </SubComponents>

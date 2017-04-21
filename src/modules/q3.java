@@ -32,7 +32,11 @@ public class q3 extends javax.swing.JFrame {
         Class.forName("oracle.jdbc.driver.OracleDriver");
            
             conn=DriverManager.getConnection(URL,USER,PASSWORD);
-            statement=conn.prepareStatement("select * from teacher");
+            statement=conn.prepareStatement("SELECT * FROM TEACHER\n" +
+"WHERE DEPTID = (SELECT DEPTID FROM DEPARTMENT\n" +
+"		WHERE NAME = \"CMPN\"\n" +
+"		AND COLLEGEID = (SELECT COLLEGEID FROM COLLEGE\n" +
+"				 WHERE NAME=\"VESIT\"));");
             rs=statement.executeQuery();
             while(rs.next())
             {
@@ -99,7 +103,7 @@ public class q3 extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        jLabel1.setText("Query DESC");
+        jLabel1.setText("Select teachers from CMPN department of VESIT");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

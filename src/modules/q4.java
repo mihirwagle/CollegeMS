@@ -32,11 +32,14 @@ public class q4 extends javax.swing.JFrame {
         Class.forName("oracle.jdbc.driver.OracleDriver");
            
             conn=DriverManager.getConnection(URL,USER,PASSWORD);
-            statement=conn.prepareStatement("select * from teacher");
+            statement=conn.prepareStatement("SELECT COLLEGEID, NAME FROM COLLEGE\n" +
+"WHERE COLLEGEID IN ( SELECT COLLEGEID FROM DEPARTMENT\n" +
+"		    WHERE DEPTID IN ( SELECT DEPTID FROM STUDENT\n" +
+"				     WHERE GPA = 10));");
             rs=statement.executeQuery();
             while(rs.next())
             {
-                Object row[]={rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6),rs.getString(7),rs.getString(8),rs.getString(9),rs.getString(10)};
+                Object row[]={rs.getString(1),rs.getString(2)};
             DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
             model.addRow(row);
             }
@@ -94,7 +97,7 @@ public class q4 extends javax.swing.JFrame {
 
             },
             new String [] {
-                "TID", "NAME", "SALARY", "DOB", "DOJ", "EXPERIENCE", "QUALIFICATIONS", "TYPE", "EMAILID", "DEPTID"
+                "SID", "NAME", "DEPARTMENT", "EMAILID", "ADDRESS", "GPA", "ATTENDANCE", "PLACEMENT", "DOB"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
