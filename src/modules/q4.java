@@ -97,12 +97,12 @@ public class q4 extends javax.swing.JFrame {
 
             },
             new String [] {
-                "SID", "NAME", "DEPARTMENT", "EMAILID", "ADDRESS", "GPA", "ATTENDANCE", "PLACEMENT", "DOB"
+                "COLLEGEID", "NAME"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        jLabel1.setText("Query 4");
+        jLabel1.setText("Select collegeid and name of college having students with GPA of 10");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
