@@ -88,7 +88,7 @@ public static final String URL = "jdbc:oracle:thin:@localhost:1521:XE";
             }
         });
 
-        jLabel2.setText("Delete Teacher");
+        jLabel2.setText("Update Teacher");
 
         jButton3.setText("Load");
         jButton3.addActionListener(new java.awt.event.ActionListener() {

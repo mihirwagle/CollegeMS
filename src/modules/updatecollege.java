@@ -77,7 +77,7 @@ public static final String URL = "jdbc:oracle:thin:@localhost:1521:XE";
             }
         });
 
-        jLabel2.setText("Delete College");
+        jLabel2.setText("Update College");
 
         jLabel3.setText("Name");
 

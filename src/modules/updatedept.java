@@ -75,7 +75,7 @@ public static final String URL = "jdbc:oracle:thin:@localhost:1521:XE";
             }
         });
 
-        jLabel2.setText("Delete Department");
+        jLabel2.setText("Update Department");
 
         jButton3.setText("LOAD");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
