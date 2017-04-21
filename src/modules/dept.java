@@ -32,7 +32,7 @@ public class dept extends javax.swing.JFrame {
         Class.forName("oracle.jdbc.driver.OracleDriver");
            
             conn=DriverManager.getConnection(URL,USER,PASSWORD);
-            statement=conn.prepareStatement("select deptid, name, studentcount, hod, collegeid  from dept");
+            statement=conn.prepareStatement("select deptid, name, studentcount, hod, collegeid  from department");
             rs=statement.executeQuery();
             while(rs.next())
             {
