@@ -17,7 +17,7 @@ import java.util.logging.Logger;
  * @author sanket
  */
 public class mainui extends javax.swing.JFrame {
-    public static final String URL = "jdbc:oracle:thin:@localhost:1521:XE";
+    public static final String URL = "jdbc:oracle:thin:@localhost:1521:orcl";
     public static final String USER = "mihir";
     public static final String PASSWORD  = "oracle";
     public static Connection conn;

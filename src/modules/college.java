@@ -18,7 +18,7 @@ import javax.swing.table.DefaultTableModel;
  * @author sanket
  */
 public class college extends javax.swing.JFrame {
-    public static final String URL = "jdbc:oracle:thin:@localhost:1521:XE";
+    public static final String URL = "jdbc:oracle:thin:@localhost.132:1521:XE";
     public static final String USER = "mihir";
     public static final String PASSWORD  = "oracle";
     public static Connection conn;
