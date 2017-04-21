@@ -111,19 +111,19 @@ public static final String URL = "jdbc:oracle:thin:@localhost:1521:XE";
 
         jLabel11.setText("DOB");
 
-        jLabel14.setText("jLabel14");
+        jLabel14.setText(" ");
 
-        jLabel15.setText("jLabel15");
+        jLabel15.setText(" ");
 
-        jLabel16.setText("jLabel16");
+        jLabel16.setText(" ");
 
-        jLabel17.setText("jLabel17");
+        jLabel17.setText(" ");
 
-        jLabel18.setText("jLabel18");
+        jLabel18.setText(" ");
 
-        jLabel19.setText("jLabel19");
+        jLabel19.setText(" ");
 
-        jLabel20.setText("jLabel20");
+        jLabel20.setText(" ");
 
         jLabel21.setText("jLabel21");
 
