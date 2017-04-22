@@ -61,7 +61,7 @@ public static final String URL = "jdbc:oracle:thin:@localhost:1521:XE";
 
         jLabel1.setText("Did");
 
-        jButton1.setText("Delete");
+        jButton1.setText("Update");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);

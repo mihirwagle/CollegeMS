@@ -32,7 +32,7 @@ public class q4 extends javax.swing.JFrame {
         Class.forName("oracle.jdbc.driver.OracleDriver");
            
             conn=DriverManager.getConnection(URL,USER,PASSWORD);
-            statement=conn.prepareStatement("SELECT COLLEGEID, NAME FROM COLLEGE WHERE COLLEGEID IN ( SELECT COLLEGEID FROM DEPARTMENT WHERE DEPTID IN ( SELECT DEPTID FROM STUDENT WHERE GPA = 10));");
+            statement=conn.prepareStatement("SELECT COLLEGEID, NAME FROM COLLEGE WHERE COLLEGEID IN ( SELECT COLLEGEID FROM DEPARTMENT WHERE DEPTID IN ( SELECT DEPTID FROM STUDENT WHERE GPA = 10))");
             rs=statement.executeQuery();
             while(rs.next())
             {

@@ -130,6 +130,7 @@ public class dyna extends javax.swing.JFrame {
         {
             Statement st = conn.createStatement();
             String str=jTextArea1.getText();
+            //System.out.println(str);
            if(str.toLowerCase().startsWith("select")){
                ResultSet rs=st.executeQuery(str);
                ResultSetMetaData rsmd=rs.getMetaData();

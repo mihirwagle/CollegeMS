@@ -3,12 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/super/Documents/NetBeansProjects/CollegeMS/src/modules/login.java</file>
             <file>file:/C:/Users/super/Documents/NetBeansProjects/CollegeMS/src/modules/mainui.java</file>
-            <file>file:/C:/Users/super/Documents/NetBeansProjects/CollegeMS/src/modules/q2.java</file>
+            <file>file:/C:/Users/super/Documents/NetBeansProjects/CollegeMS/src/modules/stu.java</file>
+            <file>file:/C:/Users/super/Documents/NetBeansProjects/CollegeMS/src/modules/teacher.java</file>
             <file>file:/C:/Users/super/Documents/NetBeansProjects/CollegeMS/src/modules/dyna.java</file>
-            <file>file:/C:/Users/super/Documents/NetBeansProjects/CollegeMS/src/modules/q3.java</file>
-            <file>file:/C:/Users/super/Documents/NetBeansProjects/CollegeMS/src/modules/q4.java</file>
+            <file>file:/C:/Users/super/Documents/NetBeansProjects/CollegeMS/src/modules/updateteacher.java</file>
             <file>file:/C:/Users/super/Documents/NetBeansProjects/CollegeMS/src/modules/updatedept.java</file>
+            <file>file:/C:/Users/super/Documents/NetBeansProjects/CollegeMS/src/modules/updatecollege.java</file>
+            <file>file:/C:/Users/super/Documents/NetBeansProjects/CollegeMS/src/modules/updatestu.java</file>
             <file>file:/C:/Users/super/Documents/NetBeansProjects/CollegeMS/src/modules/q1.java</file>
         </group>
     </open-files>

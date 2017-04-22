@@ -63,7 +63,7 @@ public static final String URL = "jdbc:oracle:thin:@localhost:1521:XE";
 
         jLabel1.setText("CID");
 
-        jButton1.setText("Delete");
+        jButton1.setText("Update");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -137,7 +137,7 @@ public static final String URL = "jdbc:oracle:thin:@localhost:1521:XE";
                                 .addComponent(jButton1)
                                 .addGap(47, 47, 47)
                                 .addComponent(jButton2)))
-                        .addGap(0, 133, Short.MAX_VALUE)))
+                        .addGap(0, 129, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(

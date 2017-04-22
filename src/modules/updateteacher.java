@@ -74,7 +74,7 @@ public static final String URL = "jdbc:oracle:thin:@localhost:1521:XE";
 
         jLabel1.setText("Tid");
 
-        jButton1.setText("Delete");
+        jButton1.setText("Update");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -121,7 +121,6 @@ public static final String URL = "jdbc:oracle:thin:@localhost:1521:XE";
             }
         });
 
-        jTextField10.setText("jTextField10");
         jTextField10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField10ActionPerformed(evt);
@@ -171,7 +170,7 @@ public static final String URL = "jdbc:oracle:thin:@localhost:1521:XE";
                                 .addComponent(jButton1)
                                 .addGap(50, 50, 50)
                                 .addComponent(jButton2)))
-                        .addGap(0, 128, Short.MAX_VALUE)))
+                        .addGap(0, 124, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(

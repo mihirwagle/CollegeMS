@@ -75,7 +75,7 @@ public static final String URL = "jdbc:oracle:thin:@localhost:1521:XE";
 
         jLabel1.setText("Sid");
 
-        jButton1.setText("Delete");
+        jButton1.setText("Update");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -161,7 +161,7 @@ public static final String URL = "jdbc:oracle:thin:@localhost:1521:XE";
                 .addComponent(jButton1)
                 .addGap(35, 35, 35)
                 .addComponent(jButton2)
-                .addContainerGap(150, Short.MAX_VALUE))
+                .addContainerGap(146, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
