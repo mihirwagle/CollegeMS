@@ -94,10 +94,9 @@ public class dyna extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton1))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 1, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING))))
+                        .addGap(0, 726, Short.MAX_VALUE)
+                        .addComponent(jButton2))
+                    .addComponent(jScrollPane2))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -112,8 +111,8 @@ public class dyna extends javax.swing.JFrame {
                     .addComponent(jButton1)
                     .addComponent(jLabel2))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(jButton2)
                 .addContainerGap())
         );
@@ -127,7 +126,9 @@ public class dyna extends javax.swing.JFrame {
         d1.setRowCount(0);
         jTable1.setModel(d1);
         try
-        {
+        {   
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+            conn=DriverManager.getConnection(URL,USER,PASSWORD);
             Statement st = conn.createStatement();
             String str=jTextArea1.getText();
             //System.out.println(str);
@@ -168,6 +169,8 @@ public class dyna extends javax.swing.JFrame {
         catch(SQLException e)
         {
             System.out.println(e.getMessage());
+        }catch (ClassNotFoundException ex) {
+            Logger.getLogger(dyna.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
