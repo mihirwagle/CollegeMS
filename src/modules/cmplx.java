@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author sanket
+ * @author mihir
  */
 public class cmplx extends javax.swing.JFrame {
     public static final String URL = "jdbc:oracle:thin:@localhost:1521:XE";

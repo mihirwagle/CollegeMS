@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author sanket
+ * @author mihir
  */
 public class addcollege extends javax.swing.JFrame {
     public static final String URL = "jdbc:oracle:thin:@localhost:1521:XE";
